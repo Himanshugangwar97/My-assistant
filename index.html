@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-quip="X-UA-Compatible" content ="IE=edge">
+  <link rel="stylesheet" href="./style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F R I D A Y</title>
+</head>
+<body>
+  <audio src="./power up.mp3" id="turn_on"></audio>
+
+  <div class="machine">
+    <div class="clock cont">
+      <img src="./clock1.png" class="icon">
+      <p id="time"></p>
+    </div>
+    <div class="internet cont">
+      <img src="./internet1.png" class="icon">
+      <p id="internet"></p>
+    </div>
+    <div class="battery cont">
+      <img src="./battery1.png" class="icon">
+      <p id="battery"></p>
+    </div>
+
+
+
+    <div class="temp">
+     <p id="location"></p>
+     <p id="country"></p>
+     <p id="weatherT"></p>
+     <p id="weatherD"></p>
+     <img src="" id="weatherIcon" />
+     <p id="oTemp"></p>
+     <p id="feelLikeTemp"></p>
+     <p id="minT"></p>
+     <p id="maxT"></p>
+    </div>
+    <img src="./heart.gif" id="heart" />
+      <!-- <img src="./iron_man.gif" id="iron_man" /> -->
+  </div>
+
+    <button id="start_jarvis_btn" class="hide_on_small">
+      <img src="https://i.gifer.com/origin/43/434771e3bf841e79abb2d4da70d6b1e2.gif" alt="start jarvis" />
+      <p>Start Recognition</p>
+    </button>
+
+    <button id="stop_jarvis_btn" class="hide_on_small">
+      <img src="https://i.gifer.com/origin/43/434771e3bf841e79abb2d4da70d6b1e2.gif" alt="stop jarvis" />
+      <p>Stop Recognition</p>
+    </button>
+    
+
+    <div class="play">
+      <button id="play"><img src="./assistant1.png" height="350"><p></p></button>
+    </div>
+    
+    <div class="messages"></div>
+
+    <div class="commands in_middle hide_on_small"></div>
+
+    <div class="new_jarvis_window">
+      <img src="./heart.gif" height="230" id="jarvis_start"/>
+    </div>
+  
+  <script>
+    let small_jarvis =document.getElementById("small_jarvis");
+        function playMusic (){
+         let audio= new Audio("./Jarvis1.mp3");
+         audio.play();
+      }
+      play.addEventListener("click",playMusic);
+  </script>
+  <script src="./app.js"></script>
+</body>
+</html>
